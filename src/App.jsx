@@ -91,7 +91,7 @@ const App = () => {
         </header>
         {trendingMovies.length > 0 && (
           <section className="trending">
-            <h2>Trending Movies</h2>
+            <h2 className="text-center">Trending Movies</h2>
             <ul>
               {trendingMovies.map((movie, index) => (
                 <li key={movie.$id}>
@@ -103,7 +103,7 @@ const App = () => {
           </section>
         )}
         <section className="all-movies">
-          <h2>All Movies</h2>
+          <h2 className="text-center">All Movies</h2>
           {loading ? (
             <p className="text-white">
               <Spinner />
